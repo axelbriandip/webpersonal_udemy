@@ -1,5 +1,14 @@
 {% extends 'core/base.html' %}
 {% block title %}Home{% endblock %}
+
+{% load static %}
+{% block bkg %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block header %}
+    <h1>Juan Pérez 222</h1>
+    <span class="subheading">Ingeniero Industrial</span>
+{% endblock %}
+
 {% block content %}
 <h2>Esto es home</h2>
 <p>Párrafo de home</p>

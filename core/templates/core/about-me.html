@@ -1,5 +1,14 @@
 {% extends 'core/base.html' %}
 {% block title %}About me{% endblock %}
+
+{% load static %}
+{% block bkg %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block header %}
+    <h1>Title about</h1>
+    <span class="subheading">subtitle about</span>
+{% endblock %}
+
 {% block content %}
 <h2>Esto es about me</h2>
 <p>Párrafo de about me</p>
